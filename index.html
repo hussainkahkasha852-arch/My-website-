@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Aysmi Fashion Embroidery</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #ffe4ec; /* 🌸 Pink background */
+    }
+
+    header {
+      background: #ff4d88;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 24px;
+      letter-spacing: 1px;
+    }
+
+    .slider {
+      width: 100%;
+      height: 250px;
+      overflow: hidden;
+    }
+
+    .slider img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      display: none;
+    }
+
+    .container {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .product {
+      background: white;
+      margin: 15px;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      display: inline-block;
+      width: 260px;
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .price {
+      color: #ff4d88;
+      font-weight: bold;
+    }
+
+    .btn {
+      background: #ff4d88;
+      color: white;
+      padding: 10px;
+      display: inline-block;
+      margin-top: 10px;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+
+    footer {
+      background: #ff4d88;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  Aysmi Fashion Embroidery
+</header>
+
+<!-- SLIDER -->
+<div class="slider">
+  <img src="slide1.jpg" class="slide">
+  <img src="slide2.jpg" class="slide">
+  <img src="slide3.jpg" class="slide">
+</div>
+
+<div class="container">
+
+  <div class="product">
+    <img src="suit1.jpg">
+    <h3>Premium Embroidered Suit</h3>
+    <p class="price">₹1500</p>
+    <a class="btn" href="https://wa.me/918006146500">Order on WhatsApp</a>
+  </div>
+
+  <div class="product">
+    <img src="suit2.jpg">
+    <h3>Party Wear Suit</h3>
+    <p class="price">₹1800</p>
+    <a class="btn" href="https://wa.me/918006146500">Order on WhatsApp</a>
+  </div>
+
+  <div class="product">
+    <img src="suit3.jpg">
+    <h3>Designer Suit</h3>
+    <p class="price">₹2000</p>
+    <a class="btn" href="https://wa.me/918006146500">Order on WhatsApp</a>
+  </div>
+
+</div>
+
+<footer>
+  Contact: 8006146500 | Aysmi Fashion Embroidery
+</footer>
+
+<script>
+  let slides = document.querySelectorAll(".slide");
+  let index = 0;
+
+  function showSlide() {
+    slides.forEach((img) => img.style.display = "none");
+    slides[index].style.display = "block";
+    index++;
+    if (index >= slides.length) index = 0;
+  }
+
+  showSlide();
+  setInterval(showSlide, 2000);
+</script>
+
+</body>
+</html>
