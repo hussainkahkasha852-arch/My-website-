@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Aysmi Fashion Embroidery</title>
+
+<style>
+body {
+    margin:0;
+    font-family:Arial;
+    color:white;
+    text-align:center;
+    animation:bg 12s infinite;
+}
+
+/* BACKGROUND AUTO CHANGE */
+@keyframes bg {
+    0% {background:url('bg1.jpg') no-repeat center/cover;}
+    33% {background:url('bg2.jpg') no-repeat center/cover;}
+    66% {background:url('bg3.jpg') no-repeat center/cover;}
+}
+
+/* HEADER */
+.header {
+    background:rgba(0,0,0,0.7);
+    padding:20px;
+}
+
+/* SECTION BOX */
+.box {
+    background:rgba(0,0,0,0.6);
+    margin:20px;
+    padding:20px;
+    border-radius:10px;
+}
+
+/* PRODUCT */
+.products {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.product {
+    margin:10px;
+}
+
+.product img {
+    width:220px;
+    border-radius:10px;
+}
+
+.btn {
+    display:block;
+    margin:10px auto;
+    padding:10px;
+    text-decoration:none;
+    color:white;
+    border-radius:5px;
+}
+
+.whatsapp {background:green;}
+.call {background:black;}
+.insta {background:#E1306C;}
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <h1>Aysmi Fashion Embroidery 🪡</h1>
+    <p>Premium Handwork Suits</p>
+</div>
+
+<!-- LOGO -->
+<div class="box">
+    <img src="logo.png" width="120">
+</div>
+
+<!-- ABOUT -->
+<div class="box">
+    <h2>About Us</h2>
+    <p>We provide premium hand embroidery suits with elegant designs and high quality fabric.</p>
+</div>
+
+<!-- PRODUCTS -->
+<div class="box">
+    <h2>Our Collection</h2>
+
+    <div class="products">
+
+        <div class="product">
+            <img src="suit1.jpg">
+            <p>Elegant Suit ₹1500</p>
+            <a href="https://wa.me/918006146500?text=I want Suit 1" class="btn whatsapp">Order</a>
+        </div>
+
+        <div class="product">
+            <img src="suit2.jpg">
+            <p>Designer Suit ₹1800</p>
+            <a href="https://wa.me/918006146500?text=I want Suit 2" class="btn whatsapp">Order</a>
+        </div>
+
+        <div class="product">
+            <img src="suit3.jpg">
+            <p>Premium Suit ₹2000</p>
+            <a href="https://wa.me/918006146500?text=I want Suit 3" class="btn whatsapp">Order</a>
+        </div>
+
+    </div>
+</div>
+
+<!-- CONTACT -->
+<div class="box">
+    <h2>Contact Us</h2>
+
+    <a href="tel:8006146500" class="btn call">📞 Call Now</a>
+
+    <a href="https://wa.me/918006146500" class="btn whatsapp">💬 WhatsApp</a>
+
+    <a href="#" class="btn insta">📸 Instagram</a>
+</div>
+
+<!-- FOOTER -->
+<div class="box">
+    <p>© 2026 Aysmi Fashion Embroidery</p>
+</div>
+
+</body>
+</html>
